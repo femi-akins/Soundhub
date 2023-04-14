@@ -4,12 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soundhub Studios</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Soundhub</title>
 </head>
 <body>
+    <!-- <div class="navbar">
+        <nav>
+            <a href="Index.html"> <img src="assets/Img/SoundhubAcademy_Logo2.png" alt=""> </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a>
+                    <ul class="dropdown">
+                        <li><a href="">Music production</a></li>
+                        <li><a href="">Soundhub gadgets</a></li>
+                        <li><a href="">Music Promotions</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Academy</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          <button type="button">Get Started</button>
+        </nav>
 
-    This is the beginning of another journey 
-    
-    
+        <div class="content">
+            <h1>We create an experience and not just music</h1>
+        </div>
+    </div>
+     -->
+
+<header>
+    <a href="#" class="brand"><img src="assets/Img/SoundhubAcademy_Logo2.png" alt=""></a>
+        <div class="menu">
+            <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+        </div>
+   
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Academy</a>
+    <a href="#">Contact</a>
+   </div>
+
+    <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+    </div>
+</header>
+
+<section class="section-main">
+    <h2>Music for next <br> generation of creators</h2>
+    <h4>We provide a wide range of high-quality music from across the African continent.</h4>
+</section>
+
+
+<section class="section-main2">
+    <h2>My man is good</h2>
+    <p>I will make in Jesus name</p>
+    <p>I will make in Jesus name</p>
+    <p>I will make in Jesus name</p>
+    <p>I will make in Jesus name</p>
+    <p>I will make in Jesus name</p>
+    <p>I will make in Jesus name</p>
+    <p>I will make in Jesus name</p>
+    <p>I will make in Jesus name</p>
+    <p>I will make in Jesus name</p>
+</section>
+  
+<script type="text/javascript">
+
+window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle('sticky', window.scrollY > 0);
+});
+
+var menu = document.querySelector('.menu');
+var menuBtn = document.querySelector('.menu-btn');
+var closeBtn = document.querySelector('.close-btn');
+
+menuBtn.addEventListener("click", () => {
+    menu.classList.add('active');
+});
+
+closeBtn.addEventListener("click", () => {
+    menu.classList.remove('active');
+});
+</script>
 </body>
 </html>
