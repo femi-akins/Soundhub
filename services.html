@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/about.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+        <a href="#" class="brand"><img src="assets/Img/SoundhubAcademy_Logo2.png" alt=""></a>
+        <div class="menu">
+          <div class="btn">
+            <i class="fas fa-times close-btn"></i>
+          </div>
+          <a href="index.html">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="academy.html">Academy</a>        
+          <a href="#">Contact</a>
+          <a href="#"><button>Get started</button></a>
+        </div>
+        <div class="btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </div>
+      </header>
+  
+      <section class="section-main">
+        <h1>Music for the next <br> <span> generation of creators </span></h1>
+        <p>We provide a wide range of high-quality music from across the African continent.</p> 
+      </section>
+    <section class="container">
+      <div class="testimonial mySwiper">
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="assets/about Images/img1.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="assets/about Images/img2.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="assets/about Images/img3.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="assets/js/script.js"></script>
+  </body>
+
+  <script type="text/javascript">
+    //javascript for navigation bar effect on scroll
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+    //javascript for responsive navigation sidebar menu
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn');
+    var closeBtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.add('active');
+    });
+
+    closeBtn.addEventListener("click", () => {
+      menu.classList.remove('active');
+    });
+
+    
+    </script>
+</html>
