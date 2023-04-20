@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Soundhub</title>
+  </head>
+  <body>
+
+    <header>
+      <a href="index.html" class="brand"><img src="assets/Img/SoundhubAcademy_Logo2.png" alt=""></a>
+      <div class="menu">
+        <div class="btn">
+          <i class="fas fa-times close-btn"></i>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Services</a>
+        <a href="academy.html">Academy</a>        
+        <a href="contact.html">Contact</a>
+        <a href="#"><button> Get started</button> </a>
+      </div>
+      <div class="btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
+    </header>
+
+    <!--  -->
+    <section class="section-main">
+      <h1>Connect with us</h1>
+      <span><a href="index.html">Home</a><i class="fa fa-arrow-right"></i>Contact Us</span>
+    </section>
+
+   
+      
+      <script type="text/javascript">
+        //javascript for navigation bar effect on scroll
+        window.addEventListener("scroll", function(){
+          var header = document.querySelector("header");
+          header.classList.toggle('sticky', window.scrollY > 0);
+        });
+    
+        //javascript for responsive navigation sidebar menu
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn');
+        var closeBtn = document.querySelector('.close-btn');
+    
+        menuBtn.addEventListener("click", () => {
+          menu.classList.add('active');
+        });
+    
+        closeBtn.addEventListener("click", () => {
+          menu.classList.remove('active');
+        });
+    
+        </script>
+    
+      </body>
+    </html>
