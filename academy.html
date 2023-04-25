@@ -3,33 +3,35 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/academy.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Soundhub</title>
   </head>
   <body>
 
     <header>
-      <a href="#" class="brand"><img src="assets/Img/SoundhubAcademy_Logo2.png" alt=""></a>
+      <a href="index.html" class="brand"><img src="assets/Img/SoundhubAcademy_Logo2.png" alt=""></a>
       <div class="menu">
         <div class="btn">
           <i class="fas fa-times close-btn"></i>
         </div>
         <a href="index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
         <a href="academy.html">Academy</a>        
-        <a href="#">Contact</a>
-        <a href="#"><button>Get started</button></a>
+        <a href="contact.html">Contact</a>
+        <a href="#"> <span class="get-started"> Get started </span></a>
       </div>
       <div class="btn">
         <i class="fas fa-bars menu-btn"></i>
       </div>
     </header>
+
+    <!--  -->
     <section class="section-main">
-      <h1>Music for the next <br> <span> generation of creators </span></h1>
-      <p>We provide a wide range of high-quality music from across the African continent.</p>
+      <h1>Bringing Music to Life</h1>
+      <span><a href="index.html">Home</a><i class="fa fa-arrow-right"></i>About Us</span>
     </section>
 
     <section class="section-two">
@@ -43,7 +45,7 @@
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
         laborum.</p>
         <button>Apply</button>
-
+    
       <h2>A&R Management</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -59,7 +61,7 @@
         Excepteur sint occaecat cupidatat non proident, 
         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       <button>Apply</button>
-
+    
       <h2>Music Marketing</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -75,23 +77,23 @@
         Excepteur sint occaecat cupidatat non proident, 
         sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         <button>Apply</button>
-
+    
     </section>
 
     <footer class="footer">
       <div class="container">
           <div class="row">
-              <div class="footer-col">
+              <div class="col-lg-3 md-6">
                   <a href="#"><img src="assets/Img/SoundhubAcademy_Logo2.png" alt=""></a>
                   <ul>
-                      <li><a href="#">about us</a></li>
-                      <li><a href="#">our services</a></li>
+                      <li><a href="about.html">about us</a></li>
+                      <li><a href="">our services</a></li>
                       <li><a href="#">privacy policy</a></li>
                       <li><a href="#">Events</a></li>
                       <li><a href="#">Academy</a></li>
                   </ul>
               </div>
-              <div class="footer-col">
+              <div class="col-lg-3 md-6">
                   <h4>get help</h4>
                   <ul>
                       <li><a href="#">FAQ</a></li>
@@ -101,7 +103,7 @@
                       <li><a href="#">payment options</a></li>
                   </ul>
               </div>
-              <div class="footer-col">
+              <div class="col-lg-3 ">
                   <h4>Soundhub shop</h4>
                   <ul>
                       <li><a href="#">speakers</a></li>
@@ -110,7 +112,7 @@
                       <li><a href="#">others</a></li>
                   </ul>
               </div>
-              <div class="footer-col">
+              <div class="col-lg-3">
                   <h4>follow us</h4>
                   <div class="social-links">
                       <a href="https://www.facebook.com/soundhubng?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -130,38 +132,34 @@
       <div class="row">
             <div class="copyright-col">
                   <div class="copyright">
-                       <p>copyright 2023 Soundhub </p>
+                    <p> copyright 2023 <strong> Soundhub </strong></p>
                 </div>
               </div>
         </div>
     </div>
  </footer>
-
-    
-
-    
-    
     
     <script type="text/javascript">
-        //javascript for navigation bar effect on scroll
-        window.addEventListener("scroll", function(){
-          var header = document.querySelector("header");
-          header.classList.toggle('sticky', window.scrollY > 0);
-        });
-    
-        //javascript for responsive navigation sidebar menu
-        var menu = document.querySelector('.menu');
-        var menuBtn = document.querySelector('.menu-btn');
-        var closeBtn = document.querySelector('.close-btn');
-    
-        menuBtn.addEventListener("click", () => {
-          menu.classList.add('active');
-        });
-    
-        closeBtn.addEventListener("click", () => {
-          menu.classList.remove('active');
-        });
-        </script>
-    
-      </body>
-    </html>
+      //javascript for navigation bar effect on scroll
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('sticky', window.scrollY > 0);
+      });
+  
+      //javascript for responsive navigation sidebar menu
+      var menu = document.querySelector('.menu');
+      var menuBtn = document.querySelector('.menu-btn');
+      var closeBtn = document.querySelector('.close-btn');
+  
+      menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+      });
+  
+      closeBtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+      });
+  
+      </script>
+  
+    </body>
+  </html>
