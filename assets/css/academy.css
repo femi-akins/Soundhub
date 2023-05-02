@@ -363,7 +363,7 @@ header .btn{
 .faqs h4 {
   position: relative;
   display: block;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 25px;
   color: #17161a;
   margin-bottom: 50px
@@ -512,4 +512,161 @@ hr {
 
 ul{
 	list-style: none;
+}
+
+
+.academics .card {
+  background-color: #f8f9fa;
+  box-shadow: 40px 45px 45px -20px rgba(196, 194, 194, 0.73);
+  transition: 0.5s ease;
+  text-align: left;
+  justify-content: center;
+  align-items: left;
+  padding: 0 30px;
+}
+
+.academics .card:hover {
+  transform: translateX(10px);
+}
+
+.academics .card-title {
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.academics .card-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.up .card {
+  width: 100%;
+  height: 230px;
+}
+
+.right .card {
+      min-height: 100px;    
+}
+
+.right .card h5 {
+  font-size: 40px;
+  text-align: left;
+  margin-left: 25px;
+  font-weight: 800;
+}
+
+.right .card p {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 25px;
+}
+
+.right .card img {
+  height: auto;
+  width: 100%;
+  padding: 25px 25px;
+
+}
+
+.right .card a {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 10px;
+  background-color: #e90101;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  width: 25%;
+  margin-left: 25px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+  border-radius: 30px;
+  display: inline-block;
+  box-shadow: 40px 45px 45px -20px rgba(17, 16, 16, 0.73);
+}
+
+.left .card {
+  background-color: #fff;
+  width: 98%;
+  height: 230px;
+  margin-top: -520px;
+}
+
+.left .card:hover {
+  background-color: #e06868;
+}
+
+.down .card {
+  background-color: #fff;
+  width: 98%;
+  height: 230px;
+  margin-top: -270px;
+}
+
+.down .card:hover {
+    background-color: #e06868;
+}
+
+
+/* Values */
+
+.values {
+  background-color: #f4f4f5; 
+  padding-bottom: 1px;
+}
+
+.values .container {
+  margin-bottom: 100px;
+}
+.values-text {
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.values-text h4 {
+  font-size: 35px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.values-text p {
+  font-size: 14px;
+  font-weight: 400;
+
+}
+
+.values i {
+  font-size: 50px;
+  color: #fff;
+  fill: #333; /* for SVG icons */
+  filter: drop-shadow(2px 2px 4px rgb(233, 1, 0));
+  /* animation: spin 2s linear infinite; */
+  }
+  
+  /* @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } */
+
+.values .card {
+  border: none;
+ 
+}
+
+.card-body h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card-body p {
+  font-size: 13px;
+  color: #000;
 }
