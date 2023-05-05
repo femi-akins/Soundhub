@@ -3,8 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS-style -->
     <link rel="stylesheet" href="assets/css/contact.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+     <!-- Swiper CSS -->
+     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+     <link rel="stylesheet" href="assets/css/bootstrapac.min.css">
+     <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+  
+    <!-- bootstrap Css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ 
+ 
+    <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Soundhub</title>
   </head>
@@ -18,181 +29,209 @@
         </div>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="#">Services</a>
-        <a href="#">Academy</a>        
+        <a href="services.html">Services</a>
+        <a href="academy.html">Academy</a>        
+        <a href="#">Media</a>
         <a href="contact.html">Contact</a>
-        <a href="#"><button> Get started</button> </a>
+        <a href="#"> <span class="get-started"> Get started </span></a>
       </div>
       <div class="btn">
         <i class="fas fa-bars menu-btn"></i>
       </div>
     </header>
-
     <!--  -->
     <section class="section-main">
       <h1>Connect with us</h1>
       <span><a href="index.html">Home</a><i class="fa fa-arrow-right"></i>Contact Us</span>
     </section>
 
-    <section class="form">
-        <div class="row">
-        <form onsubmit="sendEmail(); reset(); return false;">
-          <h3>get in touch</h3>
-          <input type="text" id="name" placeholder="Your Name" required>
-          <input type="email" id="email" placeholder="Email" required>
-          <input type="text" id="Phone" placeholder="Phone no." required>
-          <textarea name="" id="message" rows="4" placeholder="How can we help you?"></textarea>
-          <div class="send"><input type="submit" id="send"></div>
-        </form>
 
-        <div class="form-image">
-          <img src="assets/img/contactus.jpg" class="img-responsive">
+    <!-- form -->
+    <section class="form">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <h2>Get in touch</h2>
+              <form action="action_page.php">  
+                <input type="text" id="fname" name="firstname" placeholder="Your Name..">
+                <input type="text" id="Email" name="Email" placeholder="Email..">
+                <input type="text" id="phone no" name="Phone no." placeholder="Phone no..">
+                <!-- <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select> -->
+                <textarea id="subject" name="subject" placeholder="How can we help you.." style="height:150px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
+            </div>
+    
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <img src="assets/Img/contactus.jpg" alt="">
+          </div>
+
         </div>
-      </div>
       </div>
     </section>
 
-
+    <!-- contact-us -->
     <section class="contact-us">
       <div class="container">
-        <h2>Reach out to us </h2>
+        <h3>Reach out to Us</h3>
         <div class="row">
-          <div class="col">
-            <div class="location">
-              <div class="card">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <div class="card-body">
-                  <h4>Location</h4>
-                <p class="card-text">1, Tulip haven estate, Chevron drive, Lekki, Lagos, Nigeria
-                  functionality.</p></div>
-              </div>
+
+        <div class="col-4">
+       <div class="card" style="max-width: 340px;"> 
+        <div class="row">
+          <div class="col-md-2">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </div>
+          <div class="col-md-10">
+            <div class="card-body">
+              <h5 class="card-title">Location</h5>
+              <p class="card-text">1, Tulip Haven, Chevron drive, Lekki, Lagos, Nigeria</p>
             </div>
           </div>
-
-          <div class="col">
-            <div class="Email">
-              <div class="card">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <div class="card-body">
-                  <h4>Email</h4>
-                <p class="card-text">Soundhubacademy@gmail.com, sounhubng@gmail.com
-                </p></div>
-              </div>
         </div>
       </div>
+    </div>
 
-    <div class="col">
-      <div class="Phone-no">
-          <div class="card">
+      <div class="col-4">
+      <div class="card" style="max-width: 340px;"> 
+        <div class="row">
+          <div class="col-md-2">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </div>
+          <div class="col-md-10">
+            <div class="card-body">
+              <h5 class="card-title">Email</h5>
+              <p class="card-text">info@soundhubng.com, soundhub@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4">
+      <div class="card" style="max-width: 340px;"> 
+        <div class="row">
+          <div class="col-md-2">
             <i class="fa fa-phone" aria-hidden="true"></i>
-          <div class="card-body">
-            <h4>Location</h4>
-          <p class="card-text">The lorem text the section that contains header with having open 
-            functionality.</p></div>
           </div>
-      </div>
-    </div>
-          
-        </div>
-      </div>
-    </section>
-<!-- footer -->
-<footer class="footer">
-  <div class="container">
-      <div class="row">
-          <div class="footer-col">
-              <a href="#"><img src="assets/Img/SoundhubAcademy_Logo2.png" alt=""></a>
-              <ul>
-                  <li><a href="about.html">about us</a></li>
-                  <li><a href="">our services</a></li>
-                  <li><a href="#">privacy policy</a></li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Academy</a></li>
-              </ul>
-          </div>
-          <div class="footer-col">
-              <h4>get help</h4>
-              <ul>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">logistics</a></li>
-                  <li><a href="#">returns</a></li>
-                  <li><a href="#">order status</a></li>
-                  <li><a href="#">payment options</a></li>
-              </ul>
-          </div>
-          <div class="footer-col">
-              <h4>Soundhub shop</h4>
-              <ul>
-                  <li><a href="#">speakers</a></li>
-                  <li><a href="#">soundbars</a></li>
-                  <li><a href="#">musical instruments</a></li>
-                  <li><a href="#">others</a></li>
-              </ul>
-          </div>
-          <div class="footer-col">
-              <h4>follow us</h4>
-              <div class="social-links">
-                  <a href="https://www.facebook.com/soundhubng?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                  <a href="https://twitter.com/soundhubent?t=D87OEayIW3EgdLH7Z4PVfg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
-                  <a href="https://instagram.com/soundhubng?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fab fa-instagram"></i></a>
-                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
-              </div>
-          </div>
-  </div>
-</div>
-
-<div class="container">
-<hr>
-</div>
-
-<div class="container">
-  <div class="row">
-        <div class="copyright-col">
-              <div class="copyright">
-                <p> copyright 2023 <strong> Soundhub </strong></p>
+          <div class="col-md-10">
+            <div class="card-body">
+              <h5 class="card-title">Phone No.</h5>
+              <p class="card-text">+234 70-84-40-3755, +234 90-94-59-822-5 </p>
             </div>
           </div>
+        </div>
+      </div>
     </div>
-</div>
-</footer>
 
+    </div>
+    </section>
+
+        <!-- footer -->
+        <footer class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 md-6">
+                      <a href="#"><img src="assets/Img/SoundhubAcademy_Logo2.png" alt=""></a>
+                      <ul>
+                          <li><a href="about.html">about us</a></li>
+                          <li><a href="">our services</a></li>
+                          <li><a href="#">privacy policy</a></li>
+                          <li><a href="#">Events</a></li>
+                          <li><a href="#">Academy</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-3 md-6">
+                      <h4>get help</h4>
+                      <ul>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">logistics</a></li>
+                          <li><a href="#">returns</a></li>
+                          <li><a href="#">order status</a></li>
+                          <li><a href="#">payment options</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-3 ">
+                      <h4>Soundhub shop</h4>
+                      <ul>
+                          <li><a href="#">speakers</a></li>
+                          <li><a href="#">soundbars</a></li>
+                          <li><a href="#">musical instruments</a></li>
+                          <li><a href="#">others</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-3">
+                      <h4>follow us</h4>
+                      <div class="social-links">
+                          <a href="https://www.facebook.com/soundhubng?mibextid=ZbWKwL" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://twitter.com/soundhubent?t=D87OEayIW3EgdLH7Z4PVfg&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                          <a href="https://instagram.com/soundhubng?igshid=ZDdkNTZiNTM=" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                  </div>
+          </div>
+        </div>
+    
+        <div class="container">
+        <hr>
+       </div>
+    
+        <div class="container">
+          <div class="row">
+                <div class="copyright-col">
+                      <div class="copyright">
+                        <p> copyright 2023 <strong> Soundhub </strong></p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+     </footer>
+        
+    
+    
+    
+    
+        <script type="text/javascript">
+          //javascript for navigation bar effect on scroll
+          window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+          });
       
-      <script type="text/javascript">
-        //javascript for navigation bar effect on scroll
-        window.addEventListener("scroll", function(){
-          var header = document.querySelector("header");
-          header.classList.toggle('sticky', window.scrollY > 0);
-        });
+          //javascript for responsive navigation sidebar menu
+          var menu = document.querySelector('.menu');
+          var menuBtn = document.querySelector('.menu-btn');
+          var closeBtn = document.querySelector('.close-btn');
+      
+          menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+          });
+      
+          closeBtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+          });
+          </script>
     
-        //javascript for responsive navigation sidebar menu
-        var menu = document.querySelector('.menu');
-        var menuBtn = document.querySelector('.menu-btn');
-        var closeBtn = document.querySelector('.close-btn');
+       <!-- Academy-Js -->
+        <!-- Swiper JS -->
+        <script src="assets/js/Aca-Js/swiper-bundle.min.js"></script>
     
-        menuBtn.addEventListener("click", () => {
-          menu.classList.add('active');
-        });
+        <!-- JavaScript -->
+        <script src="assets/js/Aca-Js/script.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+       
+       <script> var myModal = document.getElementById('myModal')
+    var myInput = document.getElementById('myInput')
     
-        closeBtn.addEventListener("click", () => {
-          menu.classList.remove('active');
-        });
-    
-        </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-      function sendEmail() {
-                Email.send ({
-                Host : "smtp.elasticemail.com",
-                Username : "isaacchinonsogift@gmail.com",
-                Password : "5006664441471A085198F127C8AF6316B70F",
-                To : 'isaacchinonsogift@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Contact Form Enquiry",
-                Body : "And this is the body"
-            })
-            .then(
-              message => alert(message));
-            }
+    myModal.addEventListener('shown.bs.modal', function () {
+      myInput.focus()
+    })
     </script>
-      </body>
-    </html>
+        </body>
+      </html>
