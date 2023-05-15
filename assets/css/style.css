@@ -674,6 +674,59 @@ color: #000;
     font-weight: 700;
 }
 
+.academy-2 {
+  background: rgb(69, 66, 62);
+  padding: 50px 0;
+  min-height: 90vh;
+}
+
+.academy-2 img {
+  height: 450px;
+
+}
+
+.academy-2 .card{
+  margin: 50px 0;
+  height: 350px;
+  position: relative;
+  right: 5px;
+
+
+}
+
+.academy-2 .card h3 {
+  color: #000;
+  font-size: 28px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.academy-2 p {
+  color: #000;
+  font-size: 25px;
+}
+
+.academy-2 .btn {
+  background: #e90101;
+  padding: 15px 30px;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 13px;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: 0.4s ease;
+}
+
+.academy-2 .btn i {
+  color: #fff;
+  font-size: 15px;
+
+}
+
+.academy-2 .btn:hover {
+  color: #fff;
+  background: #b10f0f;
+}
 
 
 /* footer */

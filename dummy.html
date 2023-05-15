@@ -366,3 +366,42 @@ ul{
 	background-color: #24262b;
     padding: 70px 0;
 }
+
+
+<script type="text/javascript">
+  //javascript for navigation bar effect on scroll
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle('sticky', window.scrollY > 0);
+  });
+
+  //javascript for responsive navigation sidebar menu
+  var menu = document.querySelector('.menu');
+  var menuBtn = document.querySelector('.menu-btn');
+  var closeBtn = document.querySelector('.close-btn');
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.add('active');
+  });
+
+  closeBtn.addEventListener("click", () => {
+    menu.classList.remove('active');
+  });
+
+  </script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function sendEmail() {
+          Email.send ({
+          Host : "smtp.elasticemail.com",
+          Username : "isaacchinonsogift@gmail.com",
+          Password : "5006664441471A085198F127C8AF6316B70F",
+          To : 'isaacchinonsogift@gmail.com',
+          From : document.getElementById("email").value,
+          Subject : "New Contact Form Enquiry",
+          Body : "And this is the body"
+      })
+      .then(
+        message => alert(message));
+      }
+</script>
