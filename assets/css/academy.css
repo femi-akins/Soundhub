@@ -12,6 +12,7 @@ body{
  
 }
 
+
 /* header */
 header{
   z-index: 999;
@@ -312,91 +313,70 @@ header .btn{
 /* Partnership  */
 .partnership {
   background-color: #000;
-  margin: 100px 0 0 0;
-  height: 300px;
+  margin: 90px 0 40px 0;
+  padding: 20px 0;
+  height: auto;
+  
 }
 
- .p-head{
-  border-right: 2px solid #e90101;   
+.p-head {
+  justify-content: center;
   text-align: center;
-  height: 230px;
+  padding-bottom: 10px;
 }
 
-@media (max-width:560px){
-  .p-head {
-    width: 50%;
-  }
 
-  .p-header {
-    width: 50%;
-  }
+.p-head:hover .btn {
+  transform: scale(1.2);
 }
 
 .p-head h1 {
-  letter-spacing: 2px;
-  font-size: 60px;
-  line-height: 60px;
-  justify-content: center;
-  text-align: center;
-  margin: 35px 0;
   color: #fff;
+  font-size: 50px;
+  padding: 40px 0 10px 0;
 }
 
 .p-head .btn {
-  margin-top: 10px ;
-  transition: 0.4s ease;
-}
-
-.p-head .btn:hover {
-  transform: scale(1.2);
+  background-color: #e90101;
+  padding: 8px 15px;
+  border-radius: 20px; 
+  transition: 0.5s ease-in-out;
 }
 
 .p-head .btn a {
   text-decoration: none;
-  background-color: #e90101;
   color: #fff;
-  padding: 12px;
-  border-radius: 20px;
-  font-size: 14px;
-  font-weight: 600;
-
+  font-size: 13px;
 }
 
-.p-header h2 {
-  margin-top: 30px ;
-  text-align: center;
-  font-size: 35px;
+.p-header h2{
   color: #fff;
-  font-weight: 600;
-  text-transform: capitalize;
+  text-align: start;
+  padding-left: 30px;
 }
 
-.benefits ul li{
-  margin: 0; 
-  padding: 0 0 0 5px; 
-  font-size: 15px; 
+.p-header ul {
   color: #fff;
+  text-align: start;
+  font-size: 13px;
 }
 
-
-.benefits .note {
+.note {
+  text-align: end;
+  align-items: end;
   color: #fff;
   font-size: 12px;
-  margin: 20px 0;
-  text-align: right;
 }
 
-.benefits a {
+.note a {
   text-decoration: none;
-  font-style: 600;
   color: #e90101;
 }
 
-.benefits a:hover {
-  font-weight: 800;
+.note a:hover {
+  text-decoration: underline;
   color: #e90101;
 }
-
 
 /* facility */
 .facility {
@@ -623,7 +603,7 @@ header .btn{
   font-size: 14px;
   font-weight: 400;
 }
-
+            
 .values i {
   font-size: 50px;
   color: #fff;
@@ -752,11 +732,11 @@ header .btn{
   border: none
 }
 
-.accordion-item button::after {
+/* .accordion-item button::after {
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 1.25rem;
-  height: 1.25rem;
+  height: 1.25rem; 
   margin-left: auto;
   content: "\F64D";
   font-family: bootstrap-icons;
@@ -765,7 +745,7 @@ header .btn{
   transition: -webkit-transform .2s ease-in-out;
   transition: transform .2s ease-in-out;
   transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out
-}
+} */
 
 .accordion-item button:not(.collapsed)::after {
   color: #CD520F;

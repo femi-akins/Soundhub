@@ -146,7 +146,7 @@ header .btn{
 .section-main span {
   color: #fff;
   font-size: 12px;
-  margin-top: -65px;
+  margin-top: -50px;
 }
 
 .section-main span a {
@@ -329,10 +329,10 @@ header .btn{
   color: #000;
   cursor: pointer;
 }
-.services .btn a:hover {
+
+.services .btn:hover a {
   color: #fff;
 }
-
 
   /* footer */
 .container{

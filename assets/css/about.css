@@ -62,7 +62,7 @@ header .menu a{
   font-size: 14px;
   font-weight: 500;
   text-decoration: none;
-  margin: 0 20px;
+  margin: 0 10px;
   padding: 0 10px;
   border-radius: 20px;
   transition: 0.3s;  
@@ -483,6 +483,20 @@ button:hover {
   color: #fff;
 }
 
+.team .box:hover h3{
+ color: #fff;
+} 
+
+.team .box:hover h5{
+  color: #e90101;
+  font-weight: 500;
+ } 
+ 
+ .team .box:hover .icons i{
+  transform: scale(1.2);
+  color: #e90101;
+}
+
 .box h5 {
   color: #000;
   font-size: 15px;
@@ -491,11 +505,6 @@ button:hover {
   letter-spacing: 2px;
 }
 
-.box h5:hover {
-  
-    color: #e90101;
-    font-weight: 500;
-}
 
 .icons i {
   display: inline-block;
@@ -503,11 +512,6 @@ button:hover {
   font-size: 16px;
   margin: 0 5px;
   transition: all 0.38s ease;
-}
-
-.icons i:hover {
-   transform: scale(1.2);
-   color: #e90101;
 }
 
 .box:hover {
